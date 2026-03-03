@@ -44,7 +44,7 @@ https://github.com/sohib-ezaldeen/Interactive-Rating-Component.git
 ## 📚 Challenge Source
 
 This project is based on a challenge from Frontend Mentor:
-https://www.frontendmentor.io/
+ https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI
 
 ## 👤 Author
 
