@@ -5,7 +5,7 @@ A simple and interactive rating component built with HTML, CSS, and JavaScript.
 
 ## 🔗 Live Demo
 
-(https://sohib-ezaldeen.github.io/Interactive-Rating-Component/)
+https://sohib-ezaldeen.github.io/Interactive-Rating-Component/
 ## 📌 Overview
 
 This project is a solution to the **Interactive Rating Component** challenge from Frontend Mentor.  
@@ -37,11 +37,9 @@ It allows users to select a rating from 1 to 5 and submit their feedback. After 
 
 ## 📂 Repository
 
-(Add your GitHub repository link here)
+https://github.com/sohib-ezaldeen/Interactive-Rating-Component.git
 
-## 📸 Screenshot
-
-(Add a screenshot of the project here)
+ 
 
 ## 📚 Challenge Source
 
