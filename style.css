@@ -64,8 +64,12 @@ main .box-Evaluation ul {
   text-decoration: none;
   list-style: none;
 }
-
 main .box-Evaluation ul li {
+   width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+main .box-Evaluation ul li button {
   display: block;
   color: var(--Grey500);
   background-color: hsla(213, 18%, 22%, 0.688);
@@ -77,11 +81,13 @@ main .box-Evaluation ul li {
   align-items: center;
   transition: 0.3s;
   cursor: pointer;
+ 
+  border: none;
 }
-main .box-Evaluation ul li:hover{
+main .box-Evaluation ul li button:hover{
   background-color: var(--White);
 }
-button {
+button.submit-rating {
   display: block;
   margin-top: 25px;
   width: 100%;
@@ -99,7 +105,7 @@ button {
 button:hover {
   background-color: var(--White);
 }
-main .box-Evaluation ul li.active {
+main .box-Evaluation ul li button.active {
   background-color: var(--Orange500);
   color: var(--White);
 }

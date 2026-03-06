@@ -1,40 +1,34 @@
 //Selecting items
- 
-let lis = document.querySelectorAll("ul li");
- 
-let btn = document.querySelector("button");
+
+let lis = document.querySelectorAll("li button");
+let btn = document.querySelector(".submit-rating");
 let cover = document.querySelector(" .cover");
 let mainBox = document.querySelector("main");
-let questionBox = document.querySelector(" .question-box");
-let boxEvaluation = document.querySelector(" .box-Evaluation");
- 
-
+let questionBox = document.querySelector(".question-box");
+let boxEvaluation = document.querySelector(".box-Evaluation");
 let selectedRating = null;
 
 // To go through all elements and delete the class
 lis.forEach((ele, index, array) => {
   //  To add an event, click on the “Add” button.
-  ele.addEventListener("click", function (e) {
+  ele.addEventListener("click", function () {
     array.forEach((el) => {
       el.classList.remove("active");
     });
     ele.classList.add("active");
-     selectedRating = ele.dataset.num;
-  
+    selectedRating = ele.dataset.num;
+     
   });
-   
 });
 
- // To add an event, press the button and call the image creation function and thank you message.
-    btn.addEventListener("click", function () {
-      if (selectedRating !== null) {
-        GetThankMassge(selectedRating)
-      }
-      
-      else {
-        return;
-      }
-    });
+// To add an event, press the button and call the image creation function and thank you message.
+btn.addEventListener("click", function () {
+  if (selectedRating !== null) {
+    GetThankMassge(selectedRating);
+  } else {
+    return;
+  }
+});
 
 //  image creation function and thank you message.
 function GetThankMassge(e) {
@@ -61,5 +55,5 @@ function GetThankMassge(e) {
   let massge = document.createElement("span");
   massge.textContent =
     "We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch.";
-  mainBox.appendChild(massge)
+  mainBox.appendChild(massge);
 }
